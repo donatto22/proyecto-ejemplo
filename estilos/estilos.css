@@ -1,0 +1,58 @@
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    margin: 20px 0;
+}
+
+footer {
+    color: gray;
+}
+
+main {
+    margin: 40px 0;
+}
+
+/* con @media creamos una regla */
+/* para cierto ancho de pantalla en específico */
+@media (width > 700px) {
+    header h1 {
+        text-align: center;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+
+    main section {
+        background-color: crimson;
+
+        article {
+            padding: 10px 0;
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+}
+
+@media (width < 700px) {
+    main section {
+        padding: 10px;
+    }
+
+    main section article {
+        margin-bottom: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 30px -20px #1a1a1a;
+    }
+}
