@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1>Titulo grande</h1>
+        <h1 id="titulo">Titulo grande</h1>
     </header>
 
     <main>
@@ -32,6 +32,61 @@
     <footer>
         Derechos reservados
     </footer>
+
+    <script>
+        // esto es una función que nos permite mostrar un mensaje en la consola
+        // del navegador
+        console.log("hola")
+
+        // para mostrar un mensaje de alerta usamos lo siguiente
+        // alert('Bienvenido pepe')
+        // alert("bienvenido")
+
+        // tipos de datos
+        console.log("hola") // texto - string
+        console.log(12) // numero - number
+        console.log([1, 2, 3, 4, 5]) // cajita - array
+        console.log({ 'nombre': 'Pepe', 'edad': 10 }) // cajita especial - object
+        console.log(true) // boolean
+
+        // las cadenas de texto (string)
+        // concatenar string, significa unir textos
+        console.log("Bienvenido Pepe, tienes 10 años")
+
+        // números
+        console.log(10 + 10) // suma
+        console.log(10 - 10) // resta
+        console.log(10 * 10) // multiplicación
+        console.log(10 / 10) // división (cociente)
+        console.log(10 % 10) // módulo (residuo de una división)
+        console.log(2 ** 4) // potencia / elevar a 
+        console.log(4 ** (1 / 2)) // potencia / elevar a 
+
+        // variables
+        // let edad = 23
+        // let nombre = 'Donatto'
+
+        // nombre = 'Luis'
+
+        // alert('holaaaaaaa')
+        // let edad = prompt('Coloca tu edad')
+
+        let nombrePersonal = 'eeeeeeeeeeeeeeeeeeeeeeeeee'
+
+        // alert('Bienvenido, tienes ' + edad + ' años \n')
+        // alert(`Bienvenido, tienes ${edad} años`)
+        console.log('Bienvenido. \nEsta es mi página')
+
+        let nota1 = prompt('Ingresa nota1')
+        let nota2 = prompt('Ingresa nota2')
+        let nota3 = prompt('Ingresa nota3')
+        let nota4 = prompt('Ingresa nota4')
+
+        let promedio = (Number(nota1) + Number(nota2) + Number(nota3) + Number(nota4)) / 4
+
+        // toFixed es para cuantos decimales quieres mostrar
+        alert('El promedio es ' + promedio.toFixed(0))
+    </script>
 </body>
 
 </html>
