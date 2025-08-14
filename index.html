@@ -11,48 +11,6 @@
     Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su
     salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la
     solución, utilizando el ciclo apropiado.
-
-
-    <script>
-        let salarioInicial = 1500
-
-        for (i = 0; i < 6; i++) {
-            console.log(`Año ${i + 1}: `, salarioInicial + salarioInicial * (0.1 * (i + 1)))
-        }
-
-        // ---------------------------
-        let focos = ['verde', 'blanco', 'blanco', 'verde', 'blanco', 'rojo', 'blanco', 'verde']
-
-        let focos2 = ['blanco', 'rojo', 'rojo', 'blanco', 'blanco', 'rojo', 'blanco', 'verde']
-
-        function contarFocos(lista) {
-            let focosVerdes = 0
-            let focosBlancos = 0
-            let focosRojos = 0
-
-            lista.forEach(element => {
-                if (element == 'verde') {
-                    focosVerdes += 1
-                }
-
-                if (element == 'blanco') {
-                    focosBlancos += 1
-                }
-
-                if (element == 'rojo') {
-                    focosRojos += 1
-                }
-            })
-
-            console.log('Focos verdes:', focosVerdes)
-            console.log('Focos blancos:', focosBlancos)
-            console.log('Focos rojos:', focosRojos)
-            console.log('-----------------------------')
-        }
-
-        contarFocos(focos)
-        contarFocos(focos2)
-    </script>
 </body>
 
 </html>
